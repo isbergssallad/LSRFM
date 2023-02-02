@@ -35,7 +35,9 @@
 .header{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     background-color: #d0d0d0;
 }
 
@@ -45,7 +47,7 @@
     justify-content: center;
     list-style-type: none;
     font-size: medium;
-    background-color: rgb(255, 255, 255);
+    background-color: #d0d0d0;
     padding: 1vh;
 }
 
@@ -62,27 +64,56 @@ ul li a {
 
 
 .logo {
-    height: auto;
-    width: auto;
-    max-height: 100px;
-    max-width: 100px;
-    overflow: visible;
-    padding-top: 0;
-    padding-bottom: 0; 
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 4px;
 }
+
 
 
 
 .billboard {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    background-color: rgb(62, 62, 62);
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(#ffffff 40%, rgb(62, 62, 62) 40%);
+    padding-left: 10vh;
+    padding-right: 10vh;
 }
 
-.polaroid {
-    height: auto;
-    width: 50%;
-    
+.billboard_textbox {
+    font-family: "inter";
+    padding: 1vh;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 40pt;
+    color:rgb(62, 62, 62)
+}
+
+
+h2{
+    font-size: 15pt;
+    color: #eeeeee;
+    margin-top: 3em;
+}
+
+p{
+    font-size: 10pt;
+    color: #eeeeee;
+    margin-top: 2em;
+}
+
+.test {
+    width: auto;
+    height: 600px;
+}
+
+.polaroid_img {
+    max-width: 650px;
+    max-height: 650px;
 }
