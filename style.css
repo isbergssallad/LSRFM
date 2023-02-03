@@ -87,7 +87,7 @@ ul li a {
     text-decoration: none; 
     color: #000000;
     text-align: center;
-    font-family: "inter";
+    font-family: inter;
 }
 
 
@@ -116,27 +116,26 @@ ul li a {
 .billboard_textbox {
     display: flex;
     flex-direction: column;
-    font-family: "inter";
     padding: 1vh;
     max-width: 500px;
     gap: 6vh;
 }
 
 h1 {
-    font-family: inter-bold;
+    font-family: "inter-bold";
     font-size: 40pt;
     color:rgb(58, 58, 58)
 }
 
 
 h2 {
-    font-family: inter;
+    font-family: "inter";
     font-size: 14pt;
     color: #eeeeee;
 }
 
 p{
-    font-family: inter-regular;
+    font-family: "inter";
     font-size: 10pt;
     color: #eeeeee;
     line-height: 1.5em; /* space between lines of text in header*/
@@ -148,6 +147,7 @@ p{
 }
 
 .polaroid_img {
+
     height: auto;
     width: auto;
 
@@ -199,7 +199,7 @@ p{
     padding: 1vh 3vh;
     background-color: #ffffff;
     color: #000000;
-    font-family: inter-medium;
+    font-family: "inter-medium";
     border-radius: 30px;
     text-decoration: none;
     font-size: 12pt;
