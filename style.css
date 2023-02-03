@@ -1,7 +1,23 @@
-@font-face {
-    font-family: inter;
-    src: url(/inter/);
+@font-face { /* inter regular*/
+    font-family: inter-regular;
+    src: url(/inter/Inter-Regular.ttf);
 }
+
+@font-face { /* inter bold*/
+    font-family: inter-bold;
+    src: url(/inter/Inter-Bold.ttf);
+}
+
+@font-face { /* inter bold*/
+    font-family: inter-black;
+    src: url(/inter/Inter-Black.ttf);
+}
+
+@font-face { /* inter medium*/
+    font-family: inter-medium;
+    src: url(/inter/Inter-Medium.ttf);
+}
+
 
 
 
@@ -59,7 +75,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-grow: calc();
     width: auto;
     height: auto;
 
@@ -92,34 +107,39 @@ ul li a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(#ffffff 40%, rgb(62, 62, 62) 40%);
+    justify-content: space-around;
+    background: linear-gradient(#ffffff 35%, rgb(58, 58, 58) 35%);
     padding-left: 10vh;
     padding-right: 10vh;
 }
 
 .billboard_textbox {
+    display: flex;
+    flex-direction: column;
     font-family: "inter";
     padding: 1vh;
     max-width: 500px;
+    gap: 6vh;
 }
 
 h1 {
+    font-family: inter-bold;
     font-size: 40pt;
-    color:rgb(62, 62, 62)
+    color:rgb(58, 58, 58)
 }
 
 
-h2{
-    font-size: 15pt;
+h2 {
+    font-family: inter;
+    font-size: 14pt;
     color: #eeeeee;
-    margin-top: 3em;
 }
 
 p{
+    font-family: inter-regular;
     font-size: 10pt;
     color: #eeeeee;
-    margin-top: 2em;
+    line-height: 1.5em; /* space between lines of text in header*/
 }
 
 .test {
@@ -128,8 +148,9 @@ p{
 }
 
 .polaroid_img {
-    max-width: 650px;
-    max-height: 650px;
+    height: auto;
+    width: auto;
+
 }
 
 .searchbar-container {
@@ -161,7 +182,7 @@ p{
 .searchbar form input {
     border: none;
     outline: none;
-    box-shadow: none;
+    box-shadow: none; /*input form style*/
     width: 100%;
     font-size: 16px;
     padding: 5px 10px;
@@ -172,3 +193,20 @@ p{
     padding-left: 10px;
 }
 
+.billboard_textbox a {
+    display: inline-block;
+    width: fit-content;
+    padding: 1vh 3vh;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: inter-medium;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 12pt;
+
+}
+
+
+@media (max-width: 990px){
+
+}
