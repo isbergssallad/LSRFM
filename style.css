@@ -28,7 +28,7 @@
     list-style-type: none;
     font-size: small;
     background-color: #eeeeee;
-    padding: 3px;
+    padding: 3px; 
 }
 
 
@@ -36,9 +36,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #d0d0d0;
+    padding-inline-start: 5vh;
+    padding-inline-end: 5vh;
 }
 
 .header ul {
@@ -52,10 +54,22 @@
 }
 
 
+
+.header-search-and-more {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: calc();
+    width: auto;
+    height: auto;
+
+}
+
+
 /* nav bar things */
 ul li a {
-    padding: 0 10px;
-    text-decoration: none;
+    padding: 2vh;   /*padding between header options*/
+    text-decoration: none; 
     color: #000000;
     text-align: center;
     font-family: "inter";
@@ -117,3 +131,44 @@ p{
     max-width: 650px;
     max-height: 650px;
 }
+
+.searchbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbar {
+    width: auto;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    
+}
+
+.searchbar form {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #000000;  /*border around search bar*/
+    border-radius: 15px; /*roundness of box around input field*/
+    background-color: rgb(255, 255, 255);
+
+}
+
+.searchbar form input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 15px;   /*roundness of input field*/
+}
+
+.searchbar form i {
+    padding-left: 10px;
+}
+
