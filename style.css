@@ -87,7 +87,7 @@ ul li a {
     text-decoration: none; 
     color: #000000;
     text-align: center;
-    font-family: 'intermedium';
+    font-family: intermedium ;
 }
 
 
@@ -122,20 +122,20 @@ ul li a {
 }
 
 h1 {
-    font-family: 'interbold';
+    font-family: interbold;
     font-size: 40pt;
     color:rgb(58, 58, 58)
 }
 
 
 h2 {
-    font-family: 'interregular';
+    font-family: interregular;
     font-size: 14pt;
     color: #eeeeee;
 }
 
 p{
-    font-family: 'interregular';
+    font-family: interregular;
     font-size: 10pt;
     color: #eeeeee;
     line-height: 1.5em; /* space between lines of text in header*/
@@ -198,7 +198,7 @@ p{
     padding: 1vh 3vh;
     background-color: #ffffff;
     color: #000000;
-    font-family: 'intermedium';
+    font-family: intermedium;
     border-radius: 30px;
     text-decoration: none;
     font-size: 12pt;
