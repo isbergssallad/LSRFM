@@ -1,20 +1,20 @@
 @font-face { /* inter regular*/
-    font-family: inter-regular;
+    font-family: interregular;
     src: url(/inter/Inter-Regular.ttf);
 }
 
 @font-face { /* inter bold*/
-    font-family: inter-bold;
+    font-family: interbold;
     src: url(/inter/Inter-Bold.ttf);
 }
 
 @font-face { /* inter bold*/
-    font-family: inter-black;
+    font-family: interblack;
     src: url(/inter/Inter-Black.ttf);
 }
 
 @font-face { /* inter medium*/
-    font-family: inter-medium;
+    font-family: intermedium;
     src: url(/inter/Inter-Medium.ttf);
 }
 
@@ -87,7 +87,7 @@ ul li a {
     text-decoration: none; 
     color: #000000;
     text-align: center;
-    font-family: "inter-medium";
+    font-family: "intermedium";
 }
 
 
@@ -122,20 +122,20 @@ ul li a {
 }
 
 h1 {
-    font-family: "inter-bold";
+    font-family: "interbold";
     font-size: 40pt;
     color:rgb(58, 58, 58)
 }
 
 
 h2 {
-    font-family: "inter";
+    font-family: "interregular";
     font-size: 14pt;
     color: #eeeeee;
 }
 
 p{
-    font-family: "inter";
+    font-family: "interregular";
     font-size: 10pt;
     color: #eeeeee;
     line-height: 1.5em; /* space between lines of text in header*/
@@ -198,7 +198,7 @@ p{
     padding: 1vh 3vh;
     background-color: #ffffff;
     color: #000000;
-    font-family: "inter-medium";
+    font-family: "intermedium";
     border-radius: 30px;
     text-decoration: none;
     font-size: 12pt;
