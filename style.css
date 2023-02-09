@@ -141,11 +141,6 @@ p{
     line-height: 1.5em; /* space between lines of text in header*/
 }
 
-.test {
-    width: auto;
-    height: 600px;
-}
-
 .polaroid_img {
     height: auto;
     width: auto;
@@ -206,6 +201,62 @@ p{
 }
 
 
-@media (max-width: 990px){
 
+.trending-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+}
+
+.trending-items-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.trending-headline {
+    display: flex;
+    background-color: #ffffff;
+    padding: 1%;
+}
+
+.trending-headline h3 {
+    font-family: "interregular";
+    font-size: 15pt;
+}
+
+
+
+
+@media (max-width: 1000px){
+    .billboard{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 635px){
+    .header{
+        padding: 0;
+    }
+
+    .searchbar{
+        display: none;
+    }
+
+    .polaroid_img {
+        max-width: 30%;
+        height: auto;
+    }
+
+    .billboard{
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
