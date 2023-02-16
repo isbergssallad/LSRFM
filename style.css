@@ -121,20 +121,20 @@ ul li a {
     gap: 6vh;
 }
 
-h1 {
+.billboard_textbox h1 {
     font-family: 'interbold';
     font-size: 40pt;
     color:rgb(58, 58, 58)
 }
 
 
-h2 {
+.billboard_textbox h2 {
     font-family: 'interregular';
     font-size: 14pt;
     color: #eeeeee;
 }
 
-p{
+.billboard_textbox p1{
     font-family: 'interregular';
     font-size: 10pt;
     color: #eeeeee;
@@ -239,15 +239,64 @@ p{
 }
 
 
-.product-details {
-    max-width: 1200px;
+.product-page{
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+}
+
+.product-details {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
     padding: 2%;
 }
 
 
 
+.product-details h1{
+    font-family: "intermedium";
+    font-size: 13pt;
+    
+}
 
+.product-details h2{
+    font-family: "interbold";
+    font-size: 32pt;
+}
+
+.product-details h3{
+    font-family: "interbold";
+    font-size: 17pt;
+}
+
+
+.product-details h4{
+    font-family: "intermedium";
+    font-size: 12pt;
+
+}
+
+.product-details p {
+    font-family: "interregular";
+    font-size: small;
+}
+
+
+
+
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 5%;
+    background-color: #d0d0d0;
+
+}
 
 
 
