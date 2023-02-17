@@ -212,6 +212,7 @@ ul li a {
 
 .trending-items-container{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -248,17 +249,19 @@ ul li a {
 }
 
 .product-details {
-    max-width: 50%;
+    max-width: 45%;
     display: flex;
     flex-direction: column;
     padding: 2%;
+    gap: 1vh;
 }
 
 
 
 .product-details h1{
-    font-family: "intermedium";
+    font-family: "interregular";
     font-size: 13pt;
+    color: #6c6c6c;
     
 }
 
@@ -294,10 +297,27 @@ ul li a {
     flex-direction: column;
     width: auto;
     padding: 5%;
-    background-color: #d0d0d0;
+    background-color: #5d5d5d;
 
 }
 
+
+
+.buy-btn {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    background-color: #000000; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 12pt;
+    max-width: 170px;
+    font-family: "intermedium";
+    cursor: pointer;
+    text-decoration: none;
+  }
 
 
 
@@ -307,6 +327,26 @@ ul li a {
         display: flex;
         flex-direction: column;
     }
+
+    .trending-container{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+
+    }
+
+    .trending-items-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .trending-headline{
+        padding: 5%;
+    }
+
 }
 
 
@@ -331,4 +371,11 @@ ul li a {
         flex-direction: column;
         justify-content: center;
     }
+
+    .trending-container{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
 }

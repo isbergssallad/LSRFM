@@ -1,31 +1,17 @@
-let carts = document.querySelectorAll(".add-cart")
-
-
-let products = [
-    {
-        name: ""
-    }
-]
-
-for (let i=0; i < carts.length; i++) {
-    carts[i].addEventListener("click", () => {
-        console.log("added to cart");
-    })
-}
-
-function cartNumbers() {
-    let productNumbers = localStorage.getItem("cartNumbers");
-
-    productNumbers = parseInt(productNumbers);
-    localStorage.setItem("cartNumbers", 1);
-}
-
-
-
-function changeImage(element) {
-
-    var main_prodcut_image = document.getElementById('main_product_image');
-    main_prodcut_image.src = element.src;
+const product = {
+    name: "Product Name",
+    description: "Product Description",
+    price: 9.99
+  };
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    const priceElement = document.getElementById("price");
+    priceElement.innerText = product.price.toFixed(2);
     
-
-}
+    const addToCartButton = document.getElementById("add-to-cart");
+    addToCartButton.addEventListener("click", function() {
+      // Add the product to the shopping cart
+      // You can use localStorage or a server-side API to store the shopping cart
+      alert("Product added to cart!");
+    });
+  });  
