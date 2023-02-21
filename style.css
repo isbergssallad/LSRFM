@@ -347,6 +347,17 @@ ul li a {
         padding: 5%;
     }
 
+    .polaroid_img{
+        display: none;
+    }
+
+    .billboard{
+        background: url(./images/mobile_header.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: auto;
+        height: auto;
+    }
 }
 
 
