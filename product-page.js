@@ -21,7 +21,7 @@ const productid = Number(params.get("product_id"))
 
 const product = products.find(p => p.id === productid)
 
-document.getElementById("product-title").textContent = product.title;
+document.getElementById("product-title").textContent = product.name;
 document.getElementById("product-description").textContent = product.description;
 document.getElementById("product-price").textContent = product.price;
 document.getElementById("product-image").src = product.image;
