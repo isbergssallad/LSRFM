@@ -23,7 +23,8 @@ window.products = [
     {
         id: 3,
         name: "Polaroid Super Color 1000",
-        price: "$250.00",
+        price: "$90.00",
+        description: "Automatic polaroid instant camera made by Polaroid in the 1970s. European version of the famous OneStep cameras. Uses SX-70 film, now made by Polaroid Originals. Has an exposure compensation dial and a flash socket for the matching Q-Light flash that was realeased together with the camera. Plastic body available in black/white.",
         image: "./product images/polaroid super color 1000.png",
     },
 ];

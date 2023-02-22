@@ -8,9 +8,12 @@ if (cartString) {
 cart.forEach((productid, index) => {
     const product = window.products.find(p => p.id === productid)
 
+
     const cartItem = document.createElement("li")
     cartItem.textContent = product.name
     cartItem.className = "cart-item-name"
+
+
 
     const removeButton = document.createElement ("button")
     removeButton.onclick = () => {
