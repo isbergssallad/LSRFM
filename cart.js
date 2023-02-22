@@ -13,6 +13,10 @@ cart.forEach((productid, index) => {
     cartItem.textContent = product.name
     cartItem.className = "cart-item-name"
 
+    const cartItemPrice = document.createElement("li")
+    cartItemPrice.textContent = product.price //lägger till pris emellan men fungerar ej
+
+
 
 
     const removeButton = document.createElement ("button")

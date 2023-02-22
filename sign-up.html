@@ -12,8 +12,7 @@
 </head>
 <body>
 
-
-
+    
     <div class="container">
 
         <div class="top_nav">
@@ -50,27 +49,32 @@
                         </form>
                     </section>
                 </div>
-                <a href="cart.html"><img src="./images/shopping-bag-icon.svg" class="shopping-bag-icon" alt=""></a>
+                <a href="cart.html"><img src="./images/shopping-bag-icon.svg" class="shopping-bag-icon" alt=""></a>            
             </div>
         </div>
-
-
         
 
-        <div class="product-page">
-            <img src="./product images/product-placeholder.png" class="product-image" id="product-image" width=2000px alt="">
+        <div class="checkout-container">
+            <form>
+                <div class="billing-adress">
+                    <h3>Sign up</h3>
+                    <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                    <input type="checkout-text" id="fname" name="firstname" placeholder="John Smith">
+                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                    <input type="checkout-text" id="email" name="email" placeholder="john.smith@example.com">
+                    <label for="username"><i class="fa fa-address-card-o"></i> Username</label>
+                    <input type="checkout-text" id="username" name="username" placeholder="Username">
+                    <label for="pass"><i class="fa fa-lock"></i> Password</label>
+                    <input type="checkout-text" id="password" name="password" placeholder="Password">
+                </div>
+          
+                <label>
+                    <input type="checkbox" checked="checked" name="sameadr"> Remember me
+                </label>
+                    <input type="submit" value="Sign Up" class="checkout-btn">
+            </form>
 
-            <div class="product-details">
-                <h1 id="product-category">Film</h1>
-                <h2 id="product-name">product-title</h2>
-                <h3 id="product-price">product-price</h3>
-                <h4>Description</h4>
-                <p id="product-description">product-description</p>
-                <button class="buy-btn" id="buy-button">Add To Cart</button>
-            </div>
-
-
-
+          
         </div>
 
 
@@ -81,13 +85,5 @@
                 <a href="./index.html"><img src="images/logo_grey.svg" class="logo" alt=""/></a>
             </div>
         </div>
-
-
-    </div>
-
-    <script src="product-list.js"></script>
-    <script src="product-page.js"></script>
-
-
-</body>
+    </body>
 </html>

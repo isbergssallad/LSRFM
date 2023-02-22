@@ -19,8 +19,8 @@
             <nav>
                 <ul>
                     <li><a href="https://goo.gl/maps/vTBCrQiz3k1wL42r7" target="_blank">Find a Store</a></li>
-                    <li><a href="url">Sign up</a></li>
-                    <li><a href="url">Log in</a></li>
+                    <li><a href="sign-up.html">Sign up</a></li>
+                    <li><a href="log-in.html">Log in</a></li>
                     <li><a href="url">Help</a></li>
                 </ul>
             </nav>
@@ -49,16 +49,13 @@
                         </form>
                     </section>
                 </div>
-                <div class="header-icons">
-                    <a href="##"><img src="./images/heart-icon2.svg" alt=""></a>
-                    <a href="cart.html"><img src="./images/shopping-bag-icon.svg" alt=""></a>
-                </div>
+                <a href="cart.html"><img src="./images/shopping-bag-icon.svg" class="shopping-bag-icon" alt=""></a>            
             </div>
         </div>
         
 
         <div class="checkout-container">
-            <form action="/action_page.php">
+            <form>
                 <div class="billing-adress">
                     <h3>Billing Address</h3>
                     <label for="fname"><i class="fa fa-user"></i> Full Name</label>
@@ -66,11 +63,11 @@
                     <label for="email"><i class="fa fa-envelope"></i> Email</label>
                     <input type="checkout-text" id="email" name="email" placeholder="john.smith@example.com">
                     <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                    <input type="checkout-text" id="adr" name="address" placeholder="1600 Pennsylvania Avenue NW, Washington, DC 20500, USA">
+                    <input type="checkout-text" id="adr" name="address" placeholder="1600 Pennsylvania Avenue NW">
                     <label for="city"><i class="fa fa-institution"></i> City</label>
-                    <input type="checkout-text" id="city" name="city" placeholder="New York">
-                    <label for="state">State</label>
-                    <input type="checkout-text" id="state" name="state" placeholder="NY">
+                    <input type="checkout-text" id="city" name="city" placeholder="Washington D.C">
+                    <label for="Country">Country</label>
+                    <input type="checkout-text" id="state" name="state" placeholder="USA">
                     <label for="zip">Zip</label>
                     <input type="checkout-text" id="zip" name="zip" placeholder="10001">
                 </div>

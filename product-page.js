@@ -3,6 +3,7 @@ const productid = Number(params.get("product_id"))
 
 const product = window.products.find(p => p.id === productid) //global
 
+document.getElementById("product-category").textContent = product.category;
 document.getElementById("product-name").textContent = product.name;
 document.getElementById("product-description").textContent = product.description;
 document.getElementById("product-price").textContent = product.price;
