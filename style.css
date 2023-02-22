@@ -310,13 +310,13 @@ ul li a {
     background-color: #000000; /* Green */
     border: none;
     color: white;
+    text-decoration: none;
     padding: 15px 32px;
     text-align: center;
     font-size: 12pt;
     max-width: 170px;
     font-family: "intermedium";
     cursor: pointer;
-    text-decoration: none;
   }
 
 
