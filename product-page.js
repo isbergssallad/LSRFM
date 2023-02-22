@@ -1,4 +1,3 @@
-// Store the product data in an array of objects
 const products = [
     {
         id: 0,
@@ -16,18 +15,13 @@ const products = [
     }
 ];
 
-const selectedProduct = JSON.parse(localStorage.getItem("selectedProduct"));
 
+const params = new URLSearchParams(window.location.search)
+const productid = Number(params.get("product_id"))
 
-products.forEach(product => {
-    const productElement = document.getElementById(id);
-    productElement.addEventListener("click", () => {
-      // Update the product display elements with the data of the selected product
-      document.getElementById("product-title").textContent = product.title;
-      document.getElementById("product-description").textContent = product.description;
-      document.getElementById("product-price").textContent = product.price;
-      document.getElementById("product-image").src = product.image;
-    });
-  });
+const product = products.find(p => p.id === productid)
 
-
+document.getElementById("product-title").textContent = product.title;
+document.getElementById("product-description").textContent = product.description;
+document.getElementById("product-price").textContent = product.price;
+document.getElementById("product-image").src = product.image;
