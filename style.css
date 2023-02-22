@@ -311,13 +311,25 @@ ul li a {
     border: none;
     color: white;
     text-decoration: none;
-    padding: 15px 32px;
+    padding: 15px 30px;
     text-align: center;
     font-size: 12pt;
     max-width: 170px;
     font-family: "intermedium";
     cursor: pointer;
+    justify-content: center;
   }
+
+.cart-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-items ul{
+    list-style-type: none;
+}
 
 
 
