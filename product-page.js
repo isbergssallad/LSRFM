@@ -20,6 +20,6 @@ cartButton.onclick = () => {
 
     localStorage.setItem("cart", JSON.stringify(previousCart.concat(productid)))
 
-    cartButton.textContent = "Added"
+    cartButton.textContent = "Added!"
 
 }
