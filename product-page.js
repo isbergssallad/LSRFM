@@ -15,9 +15,10 @@ const cartButton = document.getElementById("buy-button") //create cart button co
 cartButton.onclick = () => { //when cart button is clicked
     const previousCartString = localStorage.getItem("cart")
 
-    let previousCart = [] //cart here will just be an array of ids
-    if (previousCartString) {
-        previousCart = JSON.parse(previousCartString)
+    let previousCart = [] //previous cart = an array
+    //cart here will just be an array of ids
+    if (previousCartString) { //if truthy
+        previousCart = JSON.parse(previousCartString) //convert previousCartString to array
     }
 
     localStorage.setItem("cart", JSON.stringify(previousCart.concat(productid))) //store ids in localstorage as strings in an array
