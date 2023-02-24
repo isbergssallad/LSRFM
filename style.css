@@ -706,6 +706,11 @@ label {
 
 
 @media (max-width: 490px){
+    .header{
+        padding-left: 5px;
+        padding-right: 8px;
+    }
+    
     .searchbar {
         width: 110px;
     }
