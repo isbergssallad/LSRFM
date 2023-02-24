@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css"/>  
+    <!-- link to font awesome and inter font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -13,9 +14,8 @@
 <body>
 
 
-
+    <!-- nav bar at the top -->
     <div class="container">
-
         <div class="top_nav">
             <nav>
                 <ul>
@@ -27,7 +27,7 @@
             </nav>
         </div>
 
-
+        <!-- header with icons, search bar and category -->
         <div class="header">
             <div class="logo">
                 <a href="./index.html"><img src="images/navbar_logo.svg" class="logo" alt=""/></a>
@@ -41,6 +41,7 @@
                     </ul>
                 </nav>
 
+                <!-- searchbar doesn't work, only for show -->
                 <div class="searchbar-containter">
                     <section class="searchbar">
                         <form>
@@ -49,11 +50,12 @@
                         </form>
                     </section>
                 </div>
+                <!-- link to cart using a shopping bag icon -->
                 <a href="cart.html"><img src="./images/shopping-bag-icon.svg" class="shopping-bag-icon" alt=""></a>
             </div>
         </div>
 
-
+        <!-- "billboard" to show popular/new product and a button linking to said product -->
         <div class="billboard">
             <div class="billboard_textbox" id="billboard_textbox">
                 <h1>Polaroid Now</h1>
@@ -71,17 +73,18 @@
             <h3>Trending</h3>
         </div>
 
+        <!-- trending items, check app.js for the loop -->
         <div class="trending-container">
             <div class="trending-items-container" id="trending-products">
             </div>
         </div>
 
-
-        <div class="picture-spacing-container">
-            <img src="./images/spacing picture.png" class="picture-spacing">
+        <!-- banner to fill space -->
+        <div class="banner1-container">
+            <img src="./images/banner1.png" class="banner1">
         </div>
 
-
+        <!-- footer -->
         <div class="footer">
             <div class="logo">
                 <a href="./index.html"><img src="images/logo_grey.svg" class="logo" alt=""/></a>
@@ -91,6 +94,7 @@
 
     </div>
 
+    <!-- link to js scripts -->
     <script src="product-list.js"></script>
     <script src="app.js"></script>
 

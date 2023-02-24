@@ -231,13 +231,12 @@ ul li a {
     font-size: 17pt;
 }
 
-.picture-spacing-container{
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+.banner1-container{
+    width: auto;
+    height: auto;
 }
 
-.picture-spacing {
+.banner1 {
     width: 100%;
     height: auto;
 }
@@ -537,6 +536,7 @@ label {
 
 .socials a{
     color: #000000;
+    font-family: "intermedium";
 }
 
 
@@ -602,6 +602,7 @@ label {
 
     .billboard_textbox p{
         color: #242424;
+        max-width: 300px;
     }
 
 
@@ -634,6 +635,9 @@ label {
         flex-direction: column;
         justify-content: center;
         padding: 5%;
+        background: url(./images/mobile_header_smaller.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .billboard_textbox {
@@ -682,6 +686,7 @@ label {
         font-size: 8pt;
         color: #242424;
         line-height: 1.5em; /* space between lines of text in header*/
+        max-width: 250px;
     }
 
     .billboard_textbox a {
@@ -699,8 +704,14 @@ label {
 }
 
 
-@media (max-width: 460px){
+@media (max-width: 490px){
     .searchbar {
         width: 110px;
+    }
+
+    .billboard{
+        background: url(./images/mobile_header_smallest.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
