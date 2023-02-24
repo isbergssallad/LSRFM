@@ -295,11 +295,22 @@ ul li a {
 
 .footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: auto;
     padding: 5%;
     background-color: #5d5d5d;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.footer p {
+    font-family: "interregular";
+    color: #fafafa;
+    white-space: nowrap;
+}
+
+.footer a {
+    color: #fafafa;
 }
 
 
@@ -499,9 +510,34 @@ label {
 
 
 
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+    gap: 27px;
+}
 
+.about-us-container h1{
+    font-family: "interbold";
+}
 
+.about-us-container h2{
+    font-family: "intermedium";
+}
 
+.about-us-container p{
+    font-family: "interregular";
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.socials a{
+    color: #000000;
+}
 
 
 
