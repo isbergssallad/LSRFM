@@ -119,8 +119,8 @@ ul li a {
 .billboard_textbox {
     display: flex;
     flex-direction: column;
-    padding: 1vh;
-    max-width: 500px;
+    padding: 5%;
+    max-width: 600px;
     gap: 6vh;
 }
 
@@ -388,10 +388,16 @@ ul li a {
     font-family: "intermedium";
     cursor: pointer;
     justify-content: center;
+    border-radius: 2px;
+}
+
+
+.cart-remove-button:hover{
+    background-color: #c83232;
 }
 
 .continue-checkout-btn{
-    background-color: #04AA6D;
+    background-color: #000000;
     color: white;
     border: none;
     text-decoration: none;
@@ -468,16 +474,26 @@ label {
 }
 
 
+.category-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2%;
+    gap: 20px;
+}
 
+.category-container h1{
+    font-family: "interregular";
+    font-size: 11pt;
+    color: #6e6d6d;
+}
 
-
-
-
-
-
-
-
-
+.category-products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 14px;
+}
 
 
 
@@ -496,6 +512,7 @@ label {
     .billboard{
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .trending-container{
@@ -531,14 +548,33 @@ label {
     }
 
     .billboard_textbox{
-        width: auto;
+        width: 800px;
         height: auto;
+        padding: 4%;
     }
 
     .billboard_textbox h1 {
         font-family: 'interbold';
-        font-size: 40pt;
-        color: #eeeeee;
+        font-size: 38pt;
+        color: #242424;
+    }
+    
+
+    .billboard_textbox h2 {
+        color: #242424;
+    }
+
+    .billboard_textbox p{
+        color: #242424;
+    }
+
+
+    .category-products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
     }
 
 }
@@ -549,9 +585,6 @@ label {
         padding: 0;
     }
 
-    .searchbar{
-        display: none;
-    }
 
     .polaroid_img {
         max-width: 30%;
@@ -599,19 +632,19 @@ label {
     .billboard_textbox h1 {
         font-family: 'interbold';
         font-size: 30pt;
-        color: #eeeeee;
+        color: #242424;
     }
 
     .billboard_textbox h2 {
         font-family: 'interregular';
         font-size: 12pt;
-        color: #eeeeee;
+        color: #242424;
     }
     
     .billboard_textbox p{
         font-family: 'interregular';
         font-size: 8pt;
-        color: #eeeeee;
+        color: #242424;
         line-height: 1.5em; /* space between lines of text in header*/
     }
 
@@ -626,5 +659,12 @@ label {
         text-decoration: none;
         font-size: 10pt;
     
+    }
+}
+
+
+@media (max-width: 460px){
+    .searchbar {
+        width: 110px;
     }
 }
