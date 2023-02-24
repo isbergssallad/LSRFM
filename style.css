@@ -144,6 +144,10 @@ ul li a {
     line-height: 1.5em; /* space between lines of text in header*/
 }
 
+.polaroid-smaller-screen{
+    display: none;
+}
+
 .polaroid_img {
     height: auto;
     width: auto;
@@ -548,9 +552,12 @@ label {
 @media (max-width: 1000px){
     .billboard{
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
+        background: #3A3A3A;
+        padding:2%;
     }
+
 
     .trending-container{
         display: flex;
@@ -576,36 +583,34 @@ label {
         display: none;
     }
 
-    .billboard {
-        width: 100%;
-        height: 100%;
-        background: url(./images/mobile_header.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
 
     .billboard_textbox{
-        width: 800px;
+        width: 400px;
         height: auto;
-        padding: 4%;
+        padding: 1%;
+        gap: 30px;
     }
 
     .billboard_textbox h1 {
         font-family: 'interbold';
-        font-size: 38pt;
-        color: #242424;
+        font-size: 32pt;
+        color: #eeeeee;
+        white-space: nowrap;
     }
     
 
     .billboard_textbox h2 {
-        color: #242424;
+        color: #eeeeee;
     }
 
     .billboard_textbox p{
-        color: #242424;
+        color: #eeeeee;
         max-width: 300px;
     }
 
+    .polaroid-smaller-screen{
+        display: flex;
+    }
 
     .category-products{
         display: flex;
@@ -630,21 +635,16 @@ label {
     }
 
     .billboard{
-        padding-left: 0;
-        padding-right: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 5%;
-        background: url(./images/mobile_header_smaller.png);
-        background-repeat: no-repeat;
-        background-size: cover;
+        padding: 2%;
     }
 
     .billboard_textbox {
         padding: 1vh;
         width: auto;
-        gap: 2vh;
+        gap: 30px;
 
     }
 
@@ -672,22 +672,22 @@ label {
 
     .billboard_textbox h1 {
         font-family: 'interbold';
-        font-size: 30pt;
-        color: #242424;
+        font-size: 32pt;
+        color: #eeeeee;
     }
 
     .billboard_textbox h2 {
         font-family: 'interregular';
-        font-size: 12pt;
-        color: #242424;
+        font-size: 14pt;
+        color: #eeeeee;
     }
     
     .billboard_textbox p{
         font-family: 'interregular';
-        font-size: 8pt;
-        color: #242424;
+        font-size: 10pt;
+        color: #eeeeee;
         line-height: 1.5em; /* space between lines of text in header*/
-        max-width: 250px;
+        max-width: 400px;
     }
 
     .billboard_textbox a {
@@ -711,8 +711,6 @@ label {
     }
 
     .billboard{
-        background: url(./images/mobile_header_smallest.png);
-        background-repeat: no-repeat;
-        background-size: cover;
+        display: flex;
     }
 }
