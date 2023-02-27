@@ -356,6 +356,7 @@ ul li a {
     list-style-type: none;
     font-family: "intermedium";
     width: 1000px;
+    gap: 15px;
 }
 
 .cart-items {
@@ -435,7 +436,6 @@ ul li a {
 .continue-checkout-btn:hover {
     background-color: #45a049;
   }
-
 
 
 
