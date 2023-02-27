@@ -356,7 +356,7 @@ ul li a {
     list-style-type: none;
     font-family: "intermedium";
     width: 1000px;
-    gap: 15px;
+    gap: 10px;
 }
 
 .cart-items {
